@@ -369,6 +369,8 @@ h3.apropos {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+
+/********déjà inclu dans le projet**********/
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -399,7 +401,57 @@ h3.apropos {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
-  /*infos*/
+  /******navigation******/
+
+/****hebergement à marseille****/
+h2.hebergement {
+    margin-top: -4px;
+    margin-bottom: 70px;
+}
+.hotelauberge img {
+    width: 180px;
+    height: 110px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+h3 {
+    font-size: 16px;
+}
+.premiereligne {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.hotelauberge {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+/***les plus populaires***/
+.populaires-cards {
+    display: flex;
+    gap: 30px;
+}
+/****activité à marseille****/
+.portfortparcdame img {
+    border-radius: 20px 20px 0 0;
+    width: 155px;
+    height: 160px;
+    object-fit: cover;
+}
+h3.cartehote {
+    font-size: 14px;
+    margin-left: 20px;
+}
+.pieddepage {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    gap: 50px;
+}
 }
 
 /* Small devices (phones, less than 768px) */
