@@ -70,7 +70,7 @@ nav img {
 }
 ul {
   display: flex; /*met l'éléments ul à l'horizontal*/
-  gap: 16px; /*séparation entre chaque éléments de navigation*/
+  gap: 50px; /*séparation entre chaque éléments de navigation*/
   list-style: none; /*retire les points de la balise*/
   margin: 0;
 }
@@ -157,8 +157,6 @@ button.bouton {
   align-items: center; /* Centre verticalement le contenu (icône et texte) */
   justify-content: center; /* Centre horizontalement le contenu */
   gap: 10px; /* Espace entre l'icône et le texte */
-  padding-top: 6px; /* Espace haut */
-  padding-bottom: 6px; /* Espace bas */
   padding-left: 10px; /* Espace gauche */
   padding-right: 13px; /* Espace droite */
   margin-right: 15px; /* espacement entre les boutons */
@@ -173,6 +171,11 @@ button.bouton img {
 }
 .bardefiltres p {
   margin-right: 15px; /*l'espacement entre les boutons*/
+}
+section.filtres {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
 }
 /*Les filtres*/
 
@@ -424,10 +427,10 @@ h3.apropos {
     margin-top: 20px;
   }
   form {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
   /*navigation*/
   /*titre*/
   .trouver {
@@ -457,6 +460,7 @@ h3.apropos {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-left: 8px;
   }
   button.bouton {
     border-radius: 25px;
@@ -473,14 +477,34 @@ h3.apropos {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-p.taille {
+    gap: 5px;
+  }
+  p.taille {
     font-size: 10px;
-}
+  }
+  /*information*/
+  .information {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 20px;
+  }
   /*Hebergement à marseille*/
+  .affichezplus {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: -190px;
+  }
   h2.hebergement {
-    margin-top: -4px;
     margin-bottom: 70px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+  }
+  .section-title {
+    margin: 0;
+    font-size: 20px;
   }
   .premiereligne,
   .deuxiemeligne {
@@ -495,8 +519,8 @@ p.taille {
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 70px;
-    margin-right: -50px;
-    margin-left: -50px;
+    margin-right: -60px;
+    margin-left: -60px;
   }
   .hotelauberge {
     background-color: white;
@@ -509,10 +533,10 @@ p.taille {
     height: 124px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-    width: 300px;
+    width: 280px;
   }
   .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    background-color: #ffffff;
     border-radius: 0px;
     padding: 30px;
     box-sizing: border-box;
@@ -536,7 +560,7 @@ p.taille {
   }
   .portfortparcdame img {
     border-radius: 20px 20px 0 0;
-    width: 320px;
+    width: 280px;
     height: 120px;
     object-fit: cover;
   }
@@ -550,14 +574,16 @@ p.taille {
     justify-content: center;
     gap: 20px;
     margin-top: -20px;
-    margin-left: -50px;
+    margin-left: -60px;
     flex-wrap: wrap;
   }
   .marseille {
-    /*la marge du titre*/
-    margin-bottom: 50px;
-    margin-left: -20px;
-  }
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        margin-left: -60px;
+    }
   /*activité à marseille*/
   /*info*/
   .pieddepage {
@@ -567,17 +593,16 @@ p.taille {
     display: flex;
     padding-top: 10px;
     padding-bottom: 30px;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .fond {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.fond {
     display: flex;
     flex-direction: column;
-    margin: 10px;
     gap: 15px;
-    margin-top: -15px;
-    margin-bottom: 20px;
-  }
+    align-items: center;
+}
   /*info*/
 }
 /* Small devices (phones) */
