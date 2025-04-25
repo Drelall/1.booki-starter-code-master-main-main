@@ -167,7 +167,7 @@ button.bouton {
   padding-right: 13px; /* Espace droite */
   margin-right: 15px; /* espacement entre les boutons */
   padding-top: 4px;
-    padding-bottom: 4px;
+  padding-bottom: 4px;
 }
 button:hover {
   /* permet de mettre une couleur au survole du bouton */
@@ -406,6 +406,7 @@ h3.apropos {
     font-size: 13px;
   }
   /******navigation******/
+  
 
   /****hebergement à marseille****/
   h2.hebergement {
@@ -462,6 +463,11 @@ h3.apropos {
 @media (max-width: 768px) {
   /* ... */
   /*navigation*/
+  img#logo {
+    width: 70px;
+    height: 20px;
+    margin-left: -10px;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -504,10 +510,10 @@ h3.apropos {
   /*navigation*/
   /*titre*/
   .trouver {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 10px;
   }
   .trouver h2 {
     font-size: 16px;
@@ -517,7 +523,7 @@ h3.apropos {
   }
   /*barre rechercher*/
   form {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
   }
@@ -552,7 +558,7 @@ h3.apropos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 20px;
   }
   p.taille {
     font-size: 10px;
@@ -576,6 +582,7 @@ h3.apropos {
     font-size: 22px;
     display: flex;
     justify-content: center;
+    margin-left: -0px;
   }
   .section-title {
     margin: 0;
@@ -623,6 +630,18 @@ h3.apropos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+  }
+  .populaires-cards .card {
+    display: flex;
+    margin-top: 33px;
+    gap: 20px;
+    width: 250px;
+  }
+  .populaires-title {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
   /*les plus populaires*/
 
@@ -655,6 +674,7 @@ h3.apropos {
     justify-content: center;
     font-size: 16px;
     margin-left: -60px;
+    margin-bottom: 40px;
   }
   /*activité à marseille*/
   /*info*/
@@ -663,11 +683,11 @@ h3.apropos {
     margin-bottom: 50px;
     margin-left: 5px;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 30px;
     gap: 50px;
     flex-direction: column;
     align-items: center;
+    padding: 50px;
+    padding-bottom: 100px;
   }
   .fond {
     display: flex;
