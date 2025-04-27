@@ -50,11 +50,7 @@ body {
 .neutral-star {
   color: var(--main-bg-color);
 }
-/*le menu*/
-
-body {
-  min-width: 320px;
-}
+/*navigation*/
 a {
   text-decoration: none;
   color: black;
@@ -73,7 +69,7 @@ header {
 img#logo {
   height: 55px;
 }
-/********** menu navigation ***************/
+/********** navigation ***************/
 img#logo {
   width: 70px;
   height: 20px;
@@ -406,7 +402,27 @@ h3.apropos {
     font-size: 13px;
   }
   /******navigation******/
-  
+  img#logo {
+    width: 70px;
+    height: 20px;
+    margin-left: 10px;
+    /***titre***/
+  }
+  .trouver {
+    margin-left: 55px;
+  }
+  /***barre rechercher*****/
+  form {
+    margin-left: 55px;
+  }
+  /***filtres*****/
+  section.filtres {
+    margin-left: 55px;
+    /***information*****/
+  }
+  .information {
+    margin-left: 55px;
+  }
 
   /****hebergement à marseille****/
   h2.hebergement {
@@ -414,10 +430,10 @@ h3.apropos {
     margin-bottom: 70px;
   }
   .hotelauberge img {
-    width: 180px;
     height: 110px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+    width: 100%
   }
   h3 {
     font-size: 16px;
@@ -440,9 +456,9 @@ h3.apropos {
   /****activité à marseille****/
   .portfortparcdame img {
     border-radius: 20px 20px 0 0;
-    width: 155px;
     height: 160px;
     object-fit: cover;
+    width: 100%;
   }
   h3.cartehote {
     font-size: 14px;
@@ -453,8 +469,6 @@ h3.apropos {
     margin-bottom: 50px;
     margin-left: 5px;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 30px;
     gap: 50px;
   }
 }
