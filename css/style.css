@@ -476,6 +476,7 @@ h3.apropos {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
   /* ... */
+  
   /*navigation*/
   img#logo {
     width: 70px;
@@ -501,7 +502,7 @@ h3.apropos {
     flex: auto;
     width: 100%;
     justify-content: space-around;
-    border-bottom: 4px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
     padding-bottom: 20px;
   }
   li.hebergements:hover,
@@ -511,7 +512,7 @@ h3.apropos {
   li.hebergements:active,
   li.activites:active {
     border-top: 0;
-    border-bottom: 3px solid #0065fc;
+    border-bottom: 2px solid #0065fc;
   }
   li.hebergements:hover a,
   li.activites:hover a,
@@ -527,7 +528,7 @@ h3.apropos {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
+
   }
   .trouver h2 {
     font-size: 16px;
@@ -536,10 +537,11 @@ h3.apropos {
     font-size: 11px;
   }
   /*barre rechercher*/
+  .champ {
+    margin-left: 25px;
+  }
   form {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
   }
   input[type="submit"] {
     display: none;
@@ -550,12 +552,13 @@ h3.apropos {
   /*barre rechercher*/
 
   /*filtres*/
+  .fil {
+    margin-left: -50px;
+  }
   .bardefiltres__boutons {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: center;
-    margin-left: 8px;
   }
   button.bouton {
     border-radius: 25px;
@@ -573,6 +576,7 @@ h3.apropos {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-left: 45px;
   }
   p.taille {
     font-size: 10px;
@@ -583,6 +587,7 @@ h3.apropos {
     align-items: center;
     font-size: 10px;
     margin-top: 20px;
+    margin-left: 25px;
   }
   /*Hebergement à marseille*/
   .affichezplus {
