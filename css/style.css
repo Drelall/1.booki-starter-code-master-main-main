@@ -34,7 +34,7 @@ i {
     color: var(--main-color);
 }
 
-/******* header *******/
+/******* navigation *******/
 .global-nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ nav a:hover {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
 }
-/********* main search-bar *********/
+/********* barre de recherche *********/
 .search-bar {
     margin-top: 30px;
 }
@@ -120,7 +120,7 @@ nav a:hover {
 .search-bar #search-mobile {
     display: none;
 }
-/**********filters-section-icon*************/
+/**********filtres*************/
 .filters-section{
     display: flex;
     margin: 35px 0 0 0px;
