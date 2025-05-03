@@ -1,172 +1,172 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
-    list-style-type: none;
-    text-decoration: none;
-    margin: 0;
+    font-family: 'Raleway', sans-serif;/*police d'écriture, plus une police d'écriture sans empattement*/
+    list-style-type: none;/*supprime les points noirs des listes*/
+    text-decoration: none;/*supprime le soulignement des liens*/
+    margin: 0;/*supprime les marges*/
 }
 
 :root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --main-color: #0065FC;/* couleur des icones */
+    --main-bg-color: #F2F2F2;/* couleur de fond principale */
+    --filter-bg-color: #DEEBFF;/* couleur de fond des filtres */
 }
 
 .fa-solid {
-    color: var(--main-color);
+    color: var(--main-color);/* couleur des icones */
 }
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: center;/* centre le contenu */
 }
 
 .main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+    width: 100%;/* largeur de la page */
+    max-width: 1440px;/* largeur maximale de la page */
+    padding: 0 50px;/* padding de la page */
+    box-sizing: border-box;/* box-sizing pour que le padding ne soit pas pris en compte dans la largeur totale */
 }
 a {
-    color: #000;
+    color: #000;/* couleur des liens dans a */
 }
 i {
-    color: var(--main-color);
+    color: var(--main-color);/* couleur des icones dans i */
 }
 
 /******* navigation *******/
-.global-nav {
+.global-nav {/* general navigation */
+    display: flex;/* flexbox pour la navigation */
+    justify-content: space-between;/* espace entre les éléments */
+    max-width: 1440px;/* largeur maximale de la navigation */
+    height: 79px;/* hauteur de la partie navigation */
+    margin-bottom: 30px;/* marge vers le bas de la partie navigation */
+}
+.global-nav img{/* logo */
     display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-    height: 79px;
-    margin-bottom: 30px;
+    flex-direction: column;/* flexbox pour l'image */
+    width: 61px;/* largeur de l'image */
+    height: 19px;/* hauteur de l'image */
+    padding: 30px 50px 30px 0;/* padding de l'image */
 }
-.global-nav img{
+nav {/* menu */
     display: flex;
-    flex-direction: column;
-    width: 61px;
-    height: 19px;
-    padding: 30px 50px 30px 0;
+    gap: 68px;/* espace entre les éléments hébergements et activités */
+    height: 33px;/* hauteur du menu */
+    padding:0px 0px 0px 50px;/* padding du menu */
 }
-nav {
-    display: flex;
-    gap: 68px;
-    height: 33px;
-    padding:0px 0px 0px 50px;
+nav a{ /* liens du menu */
+    color: black;/* couleur des liens */
+    text-align: center;/* centre le texte */
+    padding-top: 14px;/* padding du texte */
+    font-size: 16px;/* taille de la police */
+    border-top: 2px solid transparent;/* distance des bordures */
 }
-nav a{
-    color: black;
-    text-align: center;
-    padding-top: 14px;
-    font-size: 16px;
-    border-top: 2px solid transparent;
-}
-nav a:hover {
-    border-top: 2px solid var(--main-color);
-    color: var(--main-color);
+nav a:hover {/* liens du menu au survol */
+    border-top: 2px solid var(--main-color);/* couleur des bordures au survol */
+    color: var(--main-color);/* couleur des liens au survol */
 }
 /********* barre de recherche *********/
 .search-bar {
-    margin-top: 30px;
+    margin-top: 30px;/* marge vers le haut de la barre de recherche */
 }
 .search-bar h1 {
-    margin-bottom: 8px;
+    margin-bottom: 8px;/* marge vers le bas du titre de la barre de recherche */
 }
 .search-bar p {
-    margin-top: 8px;
-    margin-bottom: 35px;
-    color: rgb(78, 77, 77);
+    margin-top: 8px;/* marge vers le haut du texte de la barre de recherche */
+    margin-bottom: 35px;/* marge vers le bas du texte de la barre de recherche */
+    color: rgb(78, 77, 77);/* couleur du texte de la barre de recherche */
 }
 .search-bar .map {
-    display: flex;
+    display: flex;/* flexbox pour la localisation */
 }
-.search-bar .fa-solid {
-    background-color: #F2F2F2;
-    color: #000;
-    border-radius: 15px 0 0 15px;
-    height: 49px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 112%;
+.search-bar .fa-solid {/* icone de localisation */
+    background-color: #F2F2F2;/* couleur de fond de l'icone de localisation */
+    color: #000;/* couleur de l'icone de localisation */
+    border-radius: 15px 0 0 15px;/* arrondi les bords de l'icone de localisation */
+    height: 49px;/*hauteur de l'icone de localisation */
+    width: 50px;/* largeur de l'icone de localisation */
+    display: flex;/* flexbox pour l'icone de localisation */
+    justify-content: center;/* centre le contenu de l'icone de localisation */
+    align-items: center;/* aligne au centre le contenu de l'icone de localisation */
+    font-size: 112%;/* taille de la police de l'icone de localisation */
 }
-.search-bar input {
-    position: relative;
-    height: 49px;
-    width: 236px;
-    border: #F2F2F2 1px solid;
-    font-weight: bold;
-    font-size: 119%;
+.search-bar input { /* champ de recherche */
+    position: relative;/* position relative pour le champ de recherche */
+    height: 49px;/* hauteur du champ de recherche */
+    width: 236px;/* largeur du champ de recherche */
+    border: #F2F2F2 1px solid;/* bordure du champ de recherche */
+    font-weight: bold;/* gras pour le texte du champ de recherche */
+    font-size: 119%;/* taille de la police du champ de recherche */
 }
 .search-bar input::placeholder {
-    color: black;
-    padding:0px 20px 0px 20px;
+    color: black;/* couleur du texte du champ de recherche */
+    padding:0px 20px 0px 20px;/* padding du texte du champ de recherche */
 }
-.search-bar #search-desktop {
-    border-radius: 0 15px 15px 0;
-    border: none;
+.search-bar #search-desktop {/* bouton de recherche */
+    border-radius: 0 15px 15px 0;/* arrondi les bords du bouton de recherche */
+    border: none;/* cache les bordures du bouton de recherche */
     height: 49px;
     width: 132px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 600;/* gras pour le texte du bouton de recherche */
     background-color: #0065FC;
-    cursor: pointer;
+    cursor: pointer;/* curseur main pour le bouton de recherche */
 }
-.search-bar #search-mobile {
-    display: none;
+.search-bar #search-mobile {/* bouton de recherche mobile */
+    display: none;/* cache le bouton de recherche mobile */
 }
 /**********filtres*************/
-.filters-section{
+.filters-section{/*défini la place de filtres dans cette section*/
     display: flex;
-    margin: 35px 0 0 0px;
-    align-items: center;
-    gap: 15px;
+    margin: 35px 0 0 0px;/* marge vers le haut de la section des filtres */
+    align-items: center;/* aligne filtres au centre */
+    gap: 15px;/* espace entre filtres et les boutons */
 }
 .filters-section p {
-    font-weight: bold;
+    font-weight: bold;/* gras pour le texte de filtres */
 }
-.filters-list {
+.filters-list {/*défini la place de boutons dans cette section*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
 }
-.filters-types {
+.filters-types {/*défini la place de l'intérieur des boutons*/
     display: flex;
     align-items: center;
     height: 50px;
     border: 2px solid #d9d9d9;
     border-radius: 40px;
     padding: 4px 19px;
-    transition: 0.3s;
+    transition: 0.3s;/* transition pour le bouton, temps d'affichage pour la couleur bleu */
     gap: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box;/*pour que le padding ne soit pas pris en compte dans la largeur totale */
 }
-.filters-types:hover {
+.filters-types:hover {/*caracéristiques du bouton et au survol*/
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     cursor: pointer;
 }
 .filters-types:hover .filters-icons {
-    transform: rotate(15deg);
+    transform: rotate(15deg);/* rotation de l'icone au survol */
 }
 /** info-section **/
 .info-section {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 35px;/* marge vers le haut de la section d'information */
+    margin-bottom: 35px;/* marge vers le bas de la section d'information */
 }
-.searchplus {
+.searchplus {/* englobe l'icone info et le texte */
     display: flex;
     align-items: center;
     height: 24px;
     gap: 10px;
 }
-.searchplus .fa-info {
+.searchplus .fa-info {/*propriété de l'icone iunfo*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,9 +177,9 @@ nav a:hover {
     font-size: 81%;
     border-radius: 50%;
 }
-.searchplus p {
+.searchplus p {/*propriété du texte*/
     font-size: 106%;
-    color: rgb(59, 59, 59);
+    color: rgb(59, 59, 59);/* couleur du texte */
 }
 /********* main *********/
 .section-title {
