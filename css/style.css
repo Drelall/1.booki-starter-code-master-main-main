@@ -182,70 +182,68 @@ nav a:hover {/* liens du menu au survol */
     color: rgb(59, 59, 59);/* couleur du texte */
 }
 /********* main *********/
-.section-title {
-    margin: 0;
-    font-size: 22px;
+.section-title { /*titre d'hebergement à Marseille*/
+    margin: 0;/* marge vers le haut et le bas du titre */
+    font-size: 22px;/* taille de la police */
 }
 
-.card {
-    background-color: white;
+.card {/* carte d'hébergement */
+    background-color: white;/* couleur de fond de la carte */
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));/* ombre de la carte */
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover;/* ajustement de l'image,pour quelle soit toujours bien cadré selon la taille de l'image */
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 16px;/* taille de la police du titre de la carte */
 }
 
 .euro {
-    font-weight: 700;
+    font-weight: 700;/* gras pour le texte euro */
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);/* couleur de l'étoile neutre */
 }
 .card-rating {
-    color: #0065FC;
+    color: #0065FC;/* couleur de l'étoile de la note */
 }
-.card-rating-héber{
+.card-rating-héber{/* couleur de l'étoile de la note d'hébergement */
      color: #0065FC;
-     margin: 0px 0px 0px 15px;
+     margin: 0px 0px 0px 15px;/* marge vers le bas de l'étoile */
 }
-
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.hebergements-and-populaires {/* section d'hébergement et de populaire */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/* espace entre les éléments */
 }
 /****** Card Hebergements ***********/
-.hébergements {
-    width: 67%;
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
+.hébergements {/*ensemble des six cartes plus les titres*/
+    width: 67%;/* largeur de la section d'hébergement */
+    background-color: var(--main-bg-color);/* couleur de fond de la section d'hébergement */
+    border-radius: 20px;/* arrondi des bords de la section d'hébergement */
     padding: 30px;
-    box-sizing: border-box;
+    box-sizing: border-box;/* pour que le padding ne soit pas pris en compte dans la largeur totale */
 }
-.hébergements-cards {
+.hébergements-cards {/*ensemble des six cartes*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.lien-card {
-    width: 30%;
-    min-width: 120px;
+.lien-card {/*ensemble de la carte d'hébergement*/
+    width: 30%;/* largeur de la carte d'hébergement */
+    min-width: 120px;/* largeur minimale de la carte d'hébergement */
     background-color: white;
     padding: 5px;
     margin-top: 33px;
     border-radius: 15px;
     box-shadow: 5px 5px 10px #DADADA;
-    transition: 0.3s;
 }
-.lien-card img{
+.lien-card img{/*propriété de l'image*/
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -253,18 +251,18 @@ nav a:hover {/* liens du menu au survol */
     border-top-right-radius: 20px;
 }
 .card-title-héber{
-    margin: 1px 0px 8px 15px;
+    margin: 1px 0px 8px 15px;/*placement du titre des cartes d'hébergement*/
 }
 .card-subtitle-héber {
-    margin: 8px 0px 8px 15px;
+    margin: 8px 0px 8px 15px;/*placement du prix des cartes d'hébergement*/
 }
-.text-fin-héber {
+.text-fin-héber {/*placement d'afficher plus'*/
     font-size: 18px;
     margin-top: 33px;
 }
-
+/******code déjà présent, avant le début du projet*******/
 /****** Populaires ***********/
-.populaires {
+.populaires {/*ensemble des trois cartes plus les titres*/
     width: 32%;
     background-color: var(--main-bg-color);
     border-radius: 20px;
@@ -272,25 +270,25 @@ nav a:hover {/* liens du menu au survol */
     box-sizing: border-box;
 }
 
-.populaires-title {
+.populaires-title {/* titre titre de la carte*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cards .card {/*placement de la carte*/
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires-cards img {/*placement de l'image*/
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;/*forme de l'image*/
+    border-bottom-left-radius: 20px;/*forme de l'image*/
 }
 
-.populaires-cards .card-content {
+.populaires-cards .card-content {/*information de la carte*/
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -299,52 +297,53 @@ nav a:hover {/* liens du menu au survol */
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaires-cards .card-title {/*placement du titre de la carte*/
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-subtitle {/*placement du prix de la carte*/
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaires-cards .card-rating {/*placement de l'étoile de la carte*/
     margin-bottom: 5px;
 }
 
-/*******Activités card*********/
-#activités-section {
+/*******Activités à Marseille*********/
+#activités-section {/*cible id="activités-section", permet de ciblé précisément 
+    cette partie du html*/
     margin-bottom: 35px;
     padding: 30px;
 }
-#activités-section h2 {
+#activités-section h2 {/*cible le titre*/
     font-size: 22px;
     margin-top: 0px;
     margin-bottom: 30px;
 }
 
-.activités-list {
+.activités-list {/*placement des quatres cartes*/
     display: flex;
     align-items: flex-start;
     gap: 30px;
 }
-.activités-card{
+.activités-card{/*largeur de la carte*/
     width: 30%;
 }
-.activités-card article {
+.activités-card article { /*contenu de la carte*/
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 5px 5px 15px #DADADA;
-    overflow: hidden;
+    overflow: hidden;/*masque le contenu qui dépasse des dimenssions d'un élements*/
     transition: 0.3s;
 }
-.activités-card img {
+.activités-card img {/*propriété de l'image*/
     width: 100%;
     height: 380px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.activités-card h3 {
+.activités-card h3 {/*propriété du titre*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -355,179 +354,178 @@ nav a:hover {/* liens du menu au survol */
 }
 
 /********footer***********/
-.global-footer {
-    max-width: 1440px;
-    margin: auto;
+.global-footer {/*placement du pied de page*/
+    max-width: 1440px;/* largeur maximale du pied de page */
+    margin: auto;/* marge automatique pour centrer le pied de page */
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;/* place les éléments au début de l'axe principal, 
+    sans espace entre eux */
     background-color: #F2F2F2;
     padding: 20px;
     margin-bottom: -10px;
 }
-.footer-menu {
+.footer-menu {/*largeur de chaque menu*/
     width: 33%;
 }
-.title-footer {
+.title-footer {/*propriété du titre de chaque menu*/
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 0;
 }
-.footer-menu ul {
+.footer-menu ul {/*section du menu cliquable*/
     padding-left: 0px;
     margin: 0;
 }
-.footer-menu li {
+.footer-menu li {/*élèments du menu cliquable*/
     margin-top: 15px;
 }
 
 /****** Media queries ***********/
 @media screen and (max-width: 1271px) and (min-width: 769px) {
-    .activités-card h3{
+    .activités-card h3{/*règle pour cette partie des cartes, au niveau de la hauteur*/
         height: 20px;
     }
 }
-/* Medium devices (tablets, less/equal than 1024px) */
+/*******tablettes*********/
 @media screen and  (max-width: 1024px) and (min-width: 769px) {
-    /** media global **/ 
+    /******general******/ 
 
-    .hebergements-and-populaires {
+    .hebergements-and-populaires {/*placement de la section hébergement à Marseille*/
         flex-direction: column;
     }
-/** media tablette Nav-logo-et-lien **/
-    .global-nav ul {
+/*******navigation******/
+    .global-nav ul {/*placement du menu*/
         margin: 14px 50px 0px 50px;
     }
-/** media tablette filter section **/
-    .filters-section{
+/*******lesfiltres*******/
+    .filters-section{/*placement des filtres*/
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: 20px;
     }
-    /** media tablette info-section **/
-    .info-section {
+    /*******information*********/
+    .info-section {/*placement de la partie info*/
         margin-bottom: 0px ;
     } 
-    .searchplus .fa-info {
+    .searchplus .fa-info {/*placement de l'icone*/
         width: 24px;
         height: 24px;
     }
-    /** media tablette hébergement **/ 
+    /****hébergements à marseille******/ 
     .hébergements {
         width: 100%;
         margin-top: 50px;
     }
-/** media tablette populaire **/
-    .populaires {
+/*******les plus populaires******/
+    .populaires {/*placement de la section*/
         width: 100%;
         margin-top: 50px;
     }
-    .populaires-cards {
+    .populaires-cards {/*placement des cartes*/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaires-cards .card {
+    .populaires-cards .card {/*largeur des cartes*/
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    .populaires-cards .card-title {/*taille des titres*/
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cards .card-subtitle {/*taille du texte*/
         font-size: 13px;
     }
-/** media tablette activités à marseille **/
-    #activités-searchresults {
-        margin-top: 35px;
-    }
-    .activités-list {
+/**********activités à marseille************/
+   
+    .activités-list {/*placement des quatres cartes*/
         display: flex;
         height: 270px;
         width: 100%;
         object-fit: cover;
     }
-    .activités-card article {
+    .activités-card article {/*largeur des cartes*/
         width: 100%;
     }
-    .activités-card img {
+    .activités-card img {/*hauteur de l'image*/
         height: 200px;
     }
-    .activités-card h3 {
+    .activités-card h3 {/*placement du texte dans sa largeur*/
         width: 73%;
         height: 20px;
     }
-/** media tablette footer **/ 
+/************pied de page**************/ 
     .global-footer {
         gap: 30px;
     }
 }
 
-/** Smartphones **/
+/**********version mobile************/
 @media screen and (max-width: 768px) and (min-width: 320px){
     .main-container {
-        padding: 0;
+        padding: 0;/* padding de la page */
     }
-/** media smartphones header **/
+/**********navigation**************/
     .global-nav {
-        height: auto;
+        height: auto;/* hauteur de la partie navigation */
         flex-direction: column;
         align-items: center;
     }
     .menu img {
-        padding: 30px;
+        padding: 30px;/* padding de l'image */
     }
     .menu {
-        width: 100%;
-        padding: 0;
+        width: 100%;/* largeur de la partie navigation */
+        padding: 0;/* padding de la partie navigation */
     }
-    .menu nav {
+    .menu nav {/*******espacement entre activité et hébergement********/
         gap: 0;
         padding: 0;
     }
-    .menu a {
+    .menu a {/*******placement individuel d'activité et hébergement********/
         width: 50%;
         border-bottom: 15px ;
         border-bottom: 2px solid transparent;
         border-top: 0;
         padding-top: 0;
     }
-    .menu a:hover {
+    .menu a:hover {/*ajoute une bordure de couleur et cible le liens*/
         border-top: transparent;
-        border-bottom: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);/* couleur des bordures au survol */
     }
-/** search-bar **/ 
+/********bar de recherche*********/ 
     .search-bar {
-        padding: 0 20px;
+        padding: 0 20px;/* padding de la barre de recherche */
     }
-    .map #search-mobile {
+    .map #search-mobile {/* bouton de recherche mobile */
         padding: 0;
         width: 15%;
     }
     .map #search-desktop {
-        display: none;
+        display: none;/*cache la version ordi*/
     }
-    .map #search-mobile {
+    .map #search-mobile {/*propriété du bouton de la version mobile*/
         display: flex;
         border-radius: 15px;
         width: 49px;
         height: 49px;
-        position: relative;
+        position: relative;/*positionne la loupe part dessus le champ de recherche*/
         right: 15px;
         align-items: center;
         font-weight: bold;
         justify-content: center;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
-    .map i {
+    .map i { /*couleur de la loupe*/
         background-color: var(--main-color);
         color: #ffffff;
         height: 0;
     }
-/**  filters-section **/
+/************  filtres *****************/
     .filters-section {
         display: flex;
         padding: 0 20px;
@@ -548,7 +546,7 @@ nav a:hover {/* liens du menu au survol */
         margin-bottom: 20px;
         font-size: 13px;
     }
-/** info section **/
+/*********** information ***********/
     .info-section {
         padding: 0 20px;
     }
@@ -556,13 +554,14 @@ nav a:hover {/* liens du menu au survol */
         max-width: 24px;
         max-height: 24px;
     }
-/*** hébergement and populaires **/
+/*** Ensemble des deux sections **/
 
     .hebergements-and-populaires {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse;/*inverse les deux sections pour que 
+        les plus populaires soit en premier*/
         gap: 15px;
     }
-    /** card hébergement **/
+    /******hébergement à Marseille*********/
     .hébergements {
         display: block;
         width: 100%;
@@ -587,7 +586,7 @@ nav a:hover {/* liens du menu au survol */
         margin-top: 15px;
     }
 
-/*** les plus populaires **/
+/**************les plus populaires*******************/
     .populaires {
         width: 100%;
         border-radius: 0;
@@ -600,7 +599,7 @@ nav a:hover {/* liens du menu au survol */
     .card img {
         height: 146px;
     }
-/** activité à marseillle **/
+/*********************activité à marseillle*************/
     #activités-section {
         display: flex;
         padding: 30px;
@@ -621,7 +620,7 @@ nav a:hover {/* liens du menu au survol */
         width: 100%;
         height: 141px;
     }
-/** footer **/
+/***************pied de page**/
     .global-footer {
         padding: 30px;
         flex-direction: column;
